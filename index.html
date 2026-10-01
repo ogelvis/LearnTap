@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f5">
+  <meta name="description" content="Learn practical skills, build real knowledge and grow with confidence on LearnTap.">
+  <title>LearnTap — Practical skills for what comes next</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="course-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" data-route="home" aria-label="LearnTap home"><span class="brand-mark" aria-hidden="true">L</span>LearnTap</a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#courses" data-route="courses">Courses</a>
+      <a href="#categories" data-route="categories">Categories</a>
+      <a href="#learning" data-route="learning">My learning</a>
+      <a href="#instructor" data-route="instructor">Instructor</a>
+      <a href="#about" data-route="about">About</a>
+    </nav>
+    <div class="header-actions"><button class="text-button" data-action="sign-in">Sign in</button><button class="button button-dark button-small" data-action="join">Get started</button></div>
+  </header>
+
+  <main id="app-main">
+    <section class="page active" id="page-home" data-page="home">
+      <section class="platform-hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> LEARN FOR WHAT COMES NEXT</p>
+          <h1>Practical skills.<br><span>Real forward motion.</span></h1>
+          <p class="hero-description">LearnTap helps you turn curiosity into useful skills—with clear learning paths, practical work and progress you can see.</p>
+          <div class="hero-actions"><button class="button button-dark" data-route="courses">Explore courses <span aria-hidden="true">↗</span></button><button class="button button-quiet" data-route="learning">Start learning <span aria-hidden="true">→</span></button></div>
+          <div class="hero-proof"><div class="avatar-stack" aria-hidden="true"><span>AM</span><span>TN</span><span>KE</span><span>+</span></div><span>Small steps. Skills you can use.</span></div>
+        </div>
+        <div class="hero-visual" aria-label="A learning path from curiosity to practical skills">
+          <div class="visual-topline"><span>YOUR NEXT CHAPTER</span><span>01 — 04</span></div>
+          <div class="visual-path">
+            <div class="path-step"><span class="path-node">01</span><div><small>START WITH CURIOSITY</small><strong>Find a skill that matters to you</strong></div></div>
+            <div class="path-step"><span class="path-node">02</span><div><small>LEARN THE FOUNDATIONS</small><strong>Follow a clear, guided path</strong></div></div>
+            <div class="path-step path-step-active"><span class="path-node">03</span><div><small>PUT IT INTO PRACTICE</small><strong>Make something real</strong></div></div>
+            <div class="path-step"><span class="path-node">04</span><div><small>KEEP MOVING FORWARD</small><strong>Build on what you know</strong></div></div>
+          </div>
+          <div class="visual-bottom"><span class="visual-signal"></span><span>Learn at your pace</span><span class="visual-bottom-rule"></span><span>Grow with purpose</span></div>
+        </div>
+      </section>
+
+      <section class="stat-ribbon"><div><strong>Learn</strong><span>at your own pace</span></div><div><strong>Practice</strong><span>with real activities</span></div><div><strong>Progress</strong><span>one milestone at a time</span></div><div><strong>Grow</strong><span>toward your next goal</span></div></section>
+
+      <section class="section-wrap why-section" id="why">
+        <div class="section-heading"><div><p class="eyebrow">A BETTER WAY TO BUILD SKILLS</p><h2>Learning that moves<br>with you.</h2></div><p class="section-intro">A clear next step, useful practice and a way to see how far you have come.</p></div>
+        <div class="benefit-grid">
+          <article class="benefit"><span class="benefit-number">01</span><h3>A path, not a pile</h3><p>Follow structured courses with a clear beginning, practical milestones and a meaningful next step.</p></article>
+          <article class="benefit"><span class="benefit-number">02</span><h3>Practice as you learn</h3><p>Apply new ideas through examples, short activities and projects—not just another page of notes.</p></article>
+          <article class="benefit"><span class="benefit-number">03</span><h3>Your progress, in view</h3><p>Pick up where you left off and see completed lessons, course progress and what's next.</p></article>
+          <article class="benefit"><span class="benefit-number">04</span><h3>Room to keep growing</h3><p>Move from foundations to deeper skills as your interests and confidence develop.</p></article>
+        </div>
+      </section>
+
+      <section class="section-wrap selected-courses" id="featured-courses">
+        <div class="section-heading"><div><p class="eyebrow">A FEW PLACES TO BEGIN</p><h2>Find your next skill.</h2></div><button class="text-button" data-route="courses">Browse all courses <span aria-hidden="true">↗</span></button></div>
+        <div class="course-grid" id="featured-grid"></div>
+        <div class="section-end"><p>New directions, practical skills and more ways to learn—find the path that fits you.</p><button class="button button-dark" data-route="courses">View more courses <span aria-hidden="true">↗</span></button></div>
+      </section>
+
+      <section class="category-band" id="categories">
+        <div class="section-wrap category-layout"><div><p class="eyebrow">EXPLORE BY INTEREST</p><h2>Start with what<br>sparks your curiosity.</h2><p>From creative work to technology and business, follow an idea into a new skill.</p></div><div class="category-chips" id="home-categories"></div></div>
+      </section>
+
+      <section class="section-wrap learning-experience">
+        <div class="section-heading"><div><p class="eyebrow">HOW LEARNTAP WORKS</p><h2>Learn it. Try it.<br>Make it yours.</h2></div></div>
+        <div class="experience-steps"><article><span>01 / DISCOVER</span><h3>Choose a direction</h3><p>Explore skills and find a course that fits where you want to go.</p></article><article><span>02 / BUILD</span><h3>Learn in clear steps</h3><p>Move through short lessons, examples and useful visual explanations.</p></article><article><span>03 / APPLY</span><h3>Put knowledge to work</h3><p>Practice with activities and projects that connect ideas to real tasks.</p></article><article><span>04 / CONTINUE</span><h3>See what comes next</h3><p>Track progress and build toward your next level at your own pace.</p></article></div>
+      </section>
+
+      <section class="closing-cta"><div class="section-wrap cta-inner"><div><p class="eyebrow">YOUR NEXT STEP STARTS HERE</p><h2>Curiosity can take you somewhere.</h2><p>Choose a skill, start small and build from there.</p></div><button class="button button-light" data-route="courses">Explore learning paths <span aria-hidden="true">↗</span></button></div></section>
+    </section>
+
+    <section class="page content-shell" id="page-courses" data-page="courses">
+      <div class="page-title-block"><p class="eyebrow">COURSE LIBRARY</p><h1>Explore what you<br>want to learn next.</h1><p>Search by skill, browse a category or choose a course to explore its learning path.</p></div>
+      <div class="library-toolbar"><label class="search-field"><span aria-hidden="true">⌕</span><input id="course-search" type="search" placeholder="Search courses or skills" aria-label="Search courses"></label><label class="filter-field"><span>Category</span><select id="category-filter"><option value="">All categories</option></select></label><label class="filter-field"><span>Level</span><select id="level-filter"><option value="">All levels</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label><label class="filter-field"><span>Duration</span><select id="duration-filter"><option value="">Any duration</option></select></label><label class="filter-field"><span>Learning type</span><select id="learning-type-filter"><option value="">All learning types</option><option>Project-based</option><option>Practical</option></select></label><label class="filter-field"><span>Instructor</span><select id="instructor-filter"><option value="">All instructors</option></select></label><label class="filter-field"><span>Progress</span><select id="progress-filter"><option value="">Any progress</option><option value="not-started">Not started</option><option value="in-progress">In progress</option><option value="completed">Completed</option></select></label><label class="filter-field"><span>Sort</span><select id="sort-filter"><option value="featured">Recommended</option><option value="title">Course name</option></select></label></div>
+      <div class="library-summary"><span id="course-count"></span><button class="text-button clear-filters" id="clear-filters">Clear filters</button></div>
+      <div class="course-grid library-grid" id="library-grid"></div>
+      <div class="empty-state" id="empty-courses" hidden><span>Nothing matched this time.</span><p>Try a different search or category.</p></div>
+    </section>
+
+    <section class="page content-shell" id="page-course-detail" data-page="course-detail">
+      <div id="course-detail-content"></div>
+    </section>
+
+    <section class="page content-shell dashboard-page" id="page-learning" data-page="learning">
+      <div class="dashboard-heading"><div><p class="eyebrow">MY LEARNING</p><h1>Keep your momentum.</h1><p>Continue a course, revisit your progress or find another skill to explore.</p></div><button class="button button-dark" data-route="courses">Explore courses <span aria-hidden="true">↗</span></button></div>
+      <div class="dashboard-overview" id="dashboard-overview"></div>
+      <div class="dashboard-section"><div class="section-heading"><div><p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p><h2>Your courses</h2></div></div><div class="course-grid dashboard-course-grid" id="enrolled-grid"></div></div>
+      <div class="dashboard-section"><div class="section-heading"><div><p class="eyebrow">RECENTLY ACCESSED</p><h2>Pick up where you were.</h2></div></div><div class="course-grid" id="recent-grid"></div></div>
+      <div class="dashboard-section"><div class="section-heading"><div><p class="eyebrow">COURSES YOU HAVE FINISHED</p><h2>Completed courses</h2></div></div><div class="course-grid" id="completed-grid"></div></div>
+      <div class="dashboard-section"><div class="section-heading"><div><p class="eyebrow">A NEXT STEP TO CONSIDER</p><h2>Suggested for you</h2></div></div><div class="course-grid" id="recommended-grid"></div></div>
+    </section>
+
+    <section class="page content-shell" id="page-learning-view" data-page="learning-view">
+      <div id="learning-content"></div>
+    </section>
+
+    <section class="page content-shell instructor-page" id="page-instructor" data-page="instructor">
+      <div class="dashboard-heading"><div><p class="eyebrow">PRIVATE TEACHING WORKSPACE</p><h1>Teach with a clear plan.</h1><p>Manage course structure, prepare lesson notes and keep teaching records.</p></div><button class="button button-quiet" data-route="courses">Student course library <span aria-hidden="true">↗</span></button></div>
+      <aside class="instructor-demo-notice"><strong>Local demonstration workspace</strong><span>Instructor notes are stored in this browser only. This static demo has no accounts or server-side access controls; do not store confidential student information here.</span></aside>
+      <div class="instructor-layout">
+        <aside class="instructor-course-panel"><div class="section-heading"><div><p class="eyebrow">MY COURSES</p><h2>Teaching plan</h2></div></div><label class="filter-field"><span>Select course</span><select id="instructor-course-select"></select></label><div id="instructor-course-list"></div>
+          <form id="create-course-form" class="create-course-form"><p class="eyebrow">ADD A COURSE</p><label>Course title<input name="title" required maxlength="100" placeholder="e.g. Photography Basics"></label><label>Category<input name="category" required maxlength="60" placeholder="e.g. Creative Skills"></label><label>Description<textarea name="description" required maxlength="280" rows="3" placeholder="What will students learn?"></textarea></label><button class="button button-dark" type="submit">Create course framework</button></form>
+        </aside>
+        <div class="instructor-main" id="instructor-course-content"></div>
+      </div>
+    </section>
+
+    <section class="page content-shell about-page" id="page-about" data-page="about">
+      <p class="eyebrow">ABOUT LEARNTAP</p><h1>Skills should feel<br>within reach.</h1><p class="about-lead">LearnTap is a practical learning platform designed to help people turn interest into skills they can use.</p><div class="about-values"><article><span>01</span><h2>Clarity</h2><p>Structured paths make the next step easier to understand.</p></article><article><span>02</span><h2>Practice</h2><p>Learning sticks when you get to try the ideas yourself.</p></article><article><span>03</span><h2>Progress</h2><p>Visible milestones help you keep building with confidence.</p></article></div><button class="button button-dark" data-route="courses">Find a course <span aria-hidden="true">↗</span></button></section>
+  </main>
+
+  <div class="intro-overlay" id="intro-overlay" hidden>
+      <div class="intro-top"><span class="brand"><span class="brand-mark" aria-hidden="true">L</span>LearnTap</span><button class="text-button intro-skip" id="skip-intro">Skip introduction ×</button></div>
+      <div class="intro-stage"><p class="eyebrow" id="intro-kicker"></p><h2 id="intro-line"></h2><span class="intro-counter" id="intro-counter"></span></div>
+      <div class="intro-controls"><button class="button button-light" id="intro-play-toggle">Pause</button><div class="intro-progress"><span id="intro-progress"></span></div><span class="intro-brand" id="intro-course-label">LEARN PRACTICAL SKILLS · GROW WITH CONFIDENCE</span></div>
+  </div>
+
+  <footer class="site-footer"><div class="footer-main"><a class="brand" href="#home" data-route="home"><span class="brand-mark" aria-hidden="true">L</span>LearnTap</a><p>Practical learning for what comes next.</p><div class="footer-links"><button data-route="courses">Courses</button><button data-route="categories">Categories</button><button data-route="learning">My learning</button><button data-route="instructor">Instructor workspace</button><button data-route="about">About</button></div></div><div class="footer-bottom"><span>LearnTap learning experience · Frontend demonstration</span><span>No accounts, payments or registration data are collected.</span></div></footer>
+
+  <dialog class="dialog" id="enroll-dialog" aria-labelledby="dialog-title">
+    <form method="dialog" class="dialog-close-form"><button class="dialog-close" aria-label="Close">×</button></form>
+    <p class="eyebrow">LEARNTAP DEMO</p><h2 id="dialog-title">Your learning space is ready.</h2><p>This frontend demonstration stores course progress in this browser only. There are no online accounts or payments.</p><button class="button button-dark" id="dialog-continue">Continue to LearnTap</button>
+  </dialog>
+</body>
+</html>
